@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>امت بیدار | رسانه خبری</title>
+<meta name="description" content="امت بیدار — مرجع اخبار، تحلیل‌ها و گزارش‌ها. آخرین اخبار را از کانال‌های رسمی ما دنبال کنید.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- نوار خبر فوری -->
+<div class="ticker-bar">
+  <span class="ticker-label">⚡ خبر فوری</span>
+  <div class="ticker-wrap"><div class="ticker" id="ticker"></div></div>
+</div>
+
+<!-- هدر -->
+<header class="header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="logo-wrap">
+        <img src="logo.png" alt="امت بیدار" class="brand-logo"
+             onerror="this.classList.add('hidden');this.nextElementSibling.classList.remove('hidden')">
+        <span class="logo hidden">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/>
+          </svg>
+        </span>
+      </span>
+      <span class="brand-text">
+        <strong>امت بیدار</strong>
+        <small>رسانه‌ای برای بیداری</small>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#top">خانه</a>
+      <a href="#news">اخبار</a>
+      <a href="#channels">شبکه‌های ما</a>
+      <a href="#about">درباره ما</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" title="حالت شب و روز">🌙</button>
+  </div>
+</header>
+
+<!-- خبر ویژه -->
+<section class="container" id="featured"></section>
+
+<!-- اخبار -->
+<section class="container section" id="news">
+  <div class="section-head">
+    <h2>آخرین اخبار</h2>
+    <input type="search" id="searchBox" class="search" placeholder="🔍 جستجو در اخبار...">
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="newsGrid"></div>
+  <p class="empty" id="emptyMsg" hidden>خبری با این مشخصات پیدا نشد.</p>
+</section>
+
+<!-- شبکه‌های ما -->
+<section class="section channels" id="channels">
+  <div class="container">
+    <h2>کانال‌های رسمی امت بیدار</h2>
+    <p class="sub">برای دریافت لحظه‌ای اخبار، ما را در پلتفرم‌های مختلف دنبال کنید.</p>
+    <div class="ch-grid">
+      <a class="ch-card telegram" href="https://t.me/ommatbidar" target="_blank">
+        <span class="ch-icon">✈️</span><strong>تلگرام</strong><small>کانال اصلی اخبار</small>
+      </a>
+      <a class="ch-card bale" href="https://ble.ir/ommatbidar" target="_blank">
+        <span class="ch-icon">💬</span><strong>بله</strong><small>نسخه بدون فیلتر</small>
+      </a>
+      <a class="ch-card eitaa" href="https://eitaa.com/ommatbidar" target="_blank">
+        <span class="ch-icon">🟠</span><strong>ایتا</strong><small>پشتیبانی داخلی</small>
+      </a>
+      <a class="ch-card instagram" href="https://instagram.com/ommatbidar" target="_blank">
+        <span class="ch-icon">📸</span><strong>اینستاگرام</strong><small>گزارش تصویری</small>
+      </a>
+      <a class="ch-card youtube" href="https://youtube.com/@ommatbidar" target="_blank">
+        <span class="ch-icon">▶️</span><strong>یوتیوب</strong><small>ویدیوها و live</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- درباره ما -->
+<section class="container section about" id="about">
+  <h2>درباره امت بیدار</h2>
+  <p>«امت بیدار» یک مجموعه رسانه‌ای مستقل است که اخبار و تحلیل‌های خود را در پلتفرم‌های مختلف منتشر می‌کند. هدف ما انتقال سریع و دقیق رویدادها به مخاطبان فارسی‌زبان است. این متن را می‌توانید در فایل index.html مطابق سلیقه خودتان ویرایش کنید.</p>
+</section>
+
+<!-- فوتر -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong class="f-brand">امت بیدار</strong>
+      <p>رسانه‌ای برای بیداری — اخبار را از منبع اصلی دنبال کنید.</p>
+    </div>
+    <div class="f-links">
+      <a href="#news">اخبار</a>
+      <a href="#channels">شبکه‌های ما</a>
+      <a href="#about">درباره ما</a>
+    </div>
+  </div>
+  <div class="copy">© تمامی حقوق برای مجموعه امت بیدار محفوظ است.</div>
+</footer>
+
+<button id="toTop" title="بازگشت به بالا">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
